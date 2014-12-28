@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
+.education-entry, .work-entry, .project-entry, .online-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -23,7 +23,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: black;
   line-height: 29px;
   padding: 10px;
 }
@@ -109,7 +109,7 @@ a {
 }
 
 .gray {
-  background-color: #F3F3F3;
+  background-color: #DDDDDD;
   padding-bottom: 10px;
   clear:both;
 }

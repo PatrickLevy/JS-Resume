@@ -1,7 +1,7 @@
 //Bio Contacts Object
 var bio = {
 	"name" : "Patrick Levy",
-	"role" : "Science Educator and Software Developer",
+	"role" : "Science Educator and Student - Computer Science",
 	"contacts" : {
 		"mobile": "612-501-7491",
 		"email" : "mrpatricklevy@gmail.com",
@@ -30,29 +30,29 @@ var work = {
 		"title": "Analytical Chemist",
 		"dates": "September 1999 - May 2002",
 		"location": "Minnetonka, MN",
-		"description": "Provide analytical chemistry support to research, manufacturing, and sales using HPLC, GC, FTIR, UV/Vis and wet chem methods"
+		"description": "Provide analytical chemistry support to research, manufacturing, and sales using HPLC, GC, FTIR, UV/Vis and wet chem methods."
 	},
-	{
-		"employer": "Pace Analytical",
-		"title": "Laboratory Technician",
-		"dates": "September 1998 - May 1999",
-		"location": "Minneapolis, MN",
-		"description": "Perform air, water, and soil sample analysis using GC and GC/MS"
-	},
-	{
-		"employer": "University of Minnesota",
-		"title": "Laboratory Teaching Assistant",
-		"dates": "1997 - 1998",
-		"location": "Minneapolis, MN",
-		"description": "Teach and supervise the laboratory component of a General Chemistry course"	
-	},
+	//{
+	//	"employer": "Pace Analytical",
+	//	"title": "Laboratory Technician",
+	//	"dates": "September 1998 - May 1999",
+	//	"location": "Minneapolis, MN",
+	//	"description": "Perform air, water, and soil sample analysis using GC and GC/MS"
+	//},
 	{
 		"employer": "University of Minnesota",
-		"title": "Undergraduate Researcher",
+		"title": "Laboratory Teaching Assistant and Undergraduate Researcher.",
 		"dates": "1997 - 1998",
 		"location": "Minneapolis, MN",
-		"description": "Synthesize and characterize novel organic molecules that are anticipated to have anti tumor and anti HIV activity"
+		"description": "Teach and supervise the laboratory component of a General Chemistry course.  Perform research on the synthesis of novel organic molecules."	
 	}
+	//{
+	//	"employer": "University of Minnesota",
+	//	"title": "Undergraduate Researcher",
+	//	"dates": "1997 - 1998",
+	//	"location": "Minneapolis, MN",
+	//	"description": "Synthesize and characterize novel organic molecules that are anticipated to have anti tumor and anti HIV activity"
+	//}
 	]
 }
 
@@ -165,16 +165,17 @@ function displayEducation(){
 
 //Function to display on line courses
 function displayOnlineCourses(){
-	$(".education-entry:last").append(HTMLonlineClasses);
+	$("#education").append(HTMLonlineClasses);
+	$("#education").append(HTMLonlineStart);
 	for (course in onlineCourses.courses){
 		var titleAndSchool = onlineCourses.courses[course].title + " - " + onlineCourses.courses[course].school;
 		var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", titleAndSchool);
 		var formattedOnlineDates = HTMLonlineDates.replace("%data%", onlineCourses.courses[course].dates);
 		var formattedOnlineURL = HTMLonlineURL.replace("%data%", onlineCourses.courses[course].url);
 
-		$(".education-entry:last").append(formattedOnlineTitle);
-		$(".education-entry:last").append(formattedOnlineDates);
-		$(".education-entry:last").append(formattedOnlineURL);
+		$(".online-entry:last").append(formattedOnlineTitle);
+		$(".online-entry:last").append(formattedOnlineDates);
+		$(".online-entry:last").append(formattedOnlineURL);
 	}
 }
 
@@ -257,14 +258,17 @@ displayOnlineCourses();
 displayWork();
 
 //Internationalize Button
-$("#header").append(internationalizeButton);
+$("#main").prepend(internationalizeButton);
 
 //Function for Internationalize Button
-function inName(fullName){
+function inName(){
+	 
+	 var fullName = bio.name;
+	 console.log(fullName);
 	 var splitName = fullName.split(" ");
-	 //console.log(splitName[0]);
+	 console.log(splitName[0]);
 	 splitName[1] =  splitName[1].toUpperCase();
-	 //console.log(splitName[1]);
+	 console.log(splitName[1]);
 	 fullName = splitName[0] + " " + splitName[1];
 	 return fullName;
 };
