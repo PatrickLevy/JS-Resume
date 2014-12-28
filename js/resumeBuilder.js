@@ -113,15 +113,21 @@ var projects = {
 	
 	"programming": [
 	{
-		"title": "New Project 1",
-		"dates": 2014,
-		"description": "Blah Blah Blah",
-		"image": "images/hub.jpg" 
+		"title": "StartupEDU",
+		"dates": "May 2014",
+		"description": "I worked on a team led by Julia Winter to develop an idea for a chemistry video game. The concept behind Cyclo6 is to teach reaction mechanisms by allowing students to manipulate molecular interactions using a touchscreen.  Students 'play' with molecules to discover which parts are reactive with eachother.    Our team took second place after judging!  I provided feedback to the programmer on our team on how the interface should look.  I also assisted in producing a presentation that outlined the rationale behind the game.  Julia Winter has gone on to found the educational technology company OChemPrep.",
+		"image": "images/cyclo6.jpg" 
 	},
 	{
-		"title": "New Project 2",
-		"dates": 2014,
-		"description": "Blah Bluh Blu",
+		"title": "Website Design",
+		"dates": "January 2015",
+		"description": "I am developing a website for a community acupuncturist.  The website will integrate with Zenn Planner to allow patients to view appointment availability and schedule new appointments.  I will also be providing support to the owner of the website to allow her to make updates on her own.",
+		"image": "images/lisaWebsiteCapture.jpg"
+	},
+	{
+		"title": "Ionic Bonding Practice Site",
+		"dates": "January 2015",
+		"description": "I am working on a simple site to allow chemistry students to practice writing chemical formulas for ionic compounds.  The site will randomly select positive and negative ions and require the student to determine the proper subscripts for the correct chemical formula.",
 		"image": "images/green.jpg"
 	}
 
