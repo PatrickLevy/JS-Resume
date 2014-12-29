@@ -122,7 +122,7 @@ var projects = {
 		"title": "Website Design",
 		"dates": "January 2015",
 		"description": "I am developing a website for a community acupuncturist.  The website will integrate with Zenn Planner to allow patients to view appointment availability and schedule new appointments.  I will also be providing support to the owner of the website to allow her to make updates on her own.",
-		"image": "images/lisaWebsiteCapture.jpg"
+		"image": "images/lisaWeb.jpg"
 	},
 	{
 		"title": "Ionic Bonding Practice Site",
