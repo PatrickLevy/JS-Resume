@@ -128,7 +128,7 @@ var projects = {
 		"title": "Ionic Bonding Practice Site",
 		"dates": "January 2015",
 		"description": "I am working on a simple site to allow chemistry students to practice writing chemical formulas for ionic compounds.  The site will randomly select positive and negative ions and require the student to determine the proper subscripts for the correct chemical formula.",
-		"image": "images/green.jpg"
+		"image": "images/ionicBondCap.jpg"
 	}
 
 	]
