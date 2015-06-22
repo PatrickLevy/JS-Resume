@@ -11,8 +11,6 @@
 
   <script src="js/helper.js"></script>
 
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <meta name="viewport" content="width=device-width">
 </head>
 <body unresolved>
@@ -21,24 +19,32 @@
     <div id="header" class="center-content clearfix">
       <ul id="topContacts" class='flex-box'></ul>
     </div>
+
     <div style='clear: both;'></div>
+    
     <div id="workExperience" class='gray'>
       <h2>Work Experience</h2>
     </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
+    
     <div id="education" class='gray'>
       <h2>Education</h2>
     </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived, Worked, and Studied</h2>
+
+    <div id="affiliations">
+      <h2>Affiliations</h2>
     </div>
+
+    <div id="projects">
+      <h2>Software Projects</h2>
+    </div>
+
+    
     <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
+      <h2 class='orange center-text'>Patrick Levy</h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
+  
   </div>
 
   <script src="js/resumeBuilder.js"></script>
@@ -63,10 +69,7 @@
     if(document.getElementsByClassName('flex-item').length === 0) {
       document.getElementById('letsConnect').style.display = 'none';
     }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-      //document.getElementById('mapDiv').style.backgroundColor = "black";
-    }
+    
   </script>
 </body>
 </html>

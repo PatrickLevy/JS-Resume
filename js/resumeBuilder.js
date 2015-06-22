@@ -5,12 +5,12 @@ var bio = {
 	"contacts" : {
 		"mobile": "612-501-7491",
 		"email" : "mrpatricklevy@gmail.com",
-		"github" : "cecil1896",
+		"github" : "PatrickLevy",
 		"twitter" : "N/A",
 		"location" : "Minneapolis"
 	},
-	"welcomeMsg" : "Welcome!  I have been teaching chemistry and physics in Saint Paul for several years.  I am currently working on a computer science degree through Oregon State University.  When I graduate I plan to work as a software developer for an educational technology company.  I am currently seeking an internship for summer 2015.",
-	"skills" : ["Science Education", "Programming", "C/C++", "Javascript", "HTML", "CSS", "Java"],
+	"welcomeMsg" : "Welcome!  I have been teaching chemistry and physics in Saint Paul for several years.  I am currently working on a computer science degree through Oregon State University.  Upon graduation I plan to work as a software developer and am especially interested in writing web applications.",
+	"skills" : ["Science Education", "Programming", "JavaScript", "Meteor", "PHP", "MySQL", "HTML", "CSS", "C/C++", "Java"],
 	"bioPic" : "images/me.jpg"
 };
 
@@ -32,13 +32,7 @@ var work = {
 		"location": "Minnetonka, MN",
 		"description": "Provide analytical chemistry support to research, manufacturing, and sales using HPLC, GC, FTIR, UV/Vis and wet chem methods."
 	},
-	//{
-	//	"employer": "Pace Analytical",
-	//	"title": "Laboratory Technician",
-	//	"dates": "September 1998 - May 1999",
-	//	"location": "Minneapolis, MN",
-	//	"description": "Perform air, water, and soil sample analysis using GC and GC/MS"
-	//},
+	
 	{
 		"employer": "University of Minnesota",
 		"title": "Laboratory Teaching Assistant and Undergraduate Researcher.",
@@ -46,15 +40,9 @@ var work = {
 		"location": "Minneapolis, MN",
 		"description": "Teach and supervise the laboratory component of a General Chemistry course.  Perform research on the synthesis of novel organic molecules."	
 	}
-	//{
-	//	"employer": "University of Minnesota",
-	//	"title": "Undergraduate Researcher",
-	//	"dates": "1997 - 1998",
-	//	"location": "Minneapolis, MN",
-	//	"description": "Synthesize and characterize novel organic molecules that are anticipated to have anti tumor and anti HIV activity"
-	//}
-	]
-}
+	
+	
+]};
 
 //JSON Education Object:
 var education = {
@@ -63,7 +51,7 @@ var education = {
 		"name": "Oregon State University - School of Electrical Engineering and Computer Science",
 		"location": "Corvallis, Oregon",
 		"dates": "2014 - 2016 (anticipated)",
-		"degree": "BS",
+		"degree": "BS (anticipated)",
 		"major": "Computer Science"
 	},
 	{
@@ -78,13 +66,13 @@ var education = {
 		"location": "Minneapolis, Minnesota",
 		"dates": "1995 - 1999",
 		"degree": "BS",
-		"major": "Chemistry"
+		"major": "Chemistry, Minor: Physics"
 	}
 	
-	
-  ]}
+	]
+};
 
-//JSON Online Courses Object
+// JSON Online Courses Object
 var onlineCourses = {
 	"courses": [
 	{
@@ -113,31 +101,65 @@ var projects = {
 	
 	"programming": [
 	{
-		"title": "StartupEDU",
-		"dates": "May 2014",
-		"description": "I worked on a team led by Julia Winter to develop an idea for a chemistry video game. The concept behind Cyclo6 is to teach reaction mechanisms by allowing students to manipulate molecular interactions using a touchscreen.  Students 'play' with molecules to discover which parts are reactive with eachother.    Our team took second place after judging!  I provided feedback to the programmer on our team on how the interface should look.  I also assisted in producing a presentation that outlined the rationale behind the game.  Julia Winter has gone on to found the educational technology company OChemPrep.",
-		"image": "images/cyclo6.jpg" 
+		"title": "School Announcements App",
+		"dates": "Spring 2015",
+		"description": "I am developing a web app to assist with communcation between students, staff, and parents involved in extracurricular school activities.  Students can log in, subscribe to groups to view public announcements, and request membership to groups to view and write private announcements.  This was my first time writing an application using the Meteor.JS framework and I am very excited to continue working with Meteor! Log in with username: student, password: student to try it out!",
+		"image": "images/announcementsCap.png",
+		"url": "http://announcements.meteor.com",
+		"github": "https://github.com/PatrickLevy/announcements"
 	},
 	{
-		"title": "Website Design",
-		"dates": "January 2015",
-		"description": "I am developing a website for a community acupuncturist.  The website will integrate with Zenn Planner to allow patients to view appointment availability and schedule new appointments.  I will also be providing support to the owner of the website to allow her to make updates on her own.",
-		"image": "images/lisaWeb.jpg"
+		"title": "Multiple Choice Test Center",
+		"dates": "Spring 2015",
+		"description": "I have been working on a site for teachers to administor tests and quizzes.  The application allows a teacher to log in to generate assessements or view student results.  Students can log in to take assessments.  The tests are immediately graded and the student can see immediate feedback on their performance.  I would like to add the ability to incorporate numerical answers that are graded using a % based tolerance to allow for rounding differences.  The front end uses HTML, JavaScript, and CSS.  The backend was written in PHP with a MySQLi database.  Try logging in with username: student, password: student to try out a student account.  Try logging in with username: teacher, password: teacher to try out a teacher account.",
+		"image": "images/testCenterCap.png",
+		"url": "http://web.engr.oregonstate.edu/~levyp/cs290WebDev/finalProject/login.php",
+		"github":  "https://github.com/PatrickLevy/finalProject"
 	},
 	{
-		"title": "Ionic Bonding Practice Site",
+		"title": "Ionic Bonding Practice App",
 		"dates": "January 2015",
 		"description": "I am working on a simple site to allow chemistry students to practice writing chemical formulas for ionic compounds.  The site will randomly select positive and negative ions and require the student to determine the proper subscripts for the correct chemical formula.",
-		"image": "images/ionicBondCap.jpg"
+		"image": "images/ionicBondCap.png",
+		"url": "http://web.engr.oregonstate.edu/~levyp/ionicBonding/",
+		"github": "https://github.com/PatrickLevy/IonicBonding"
 	}
 
+	
 	]
+};
+
+//Affiliations object
+var affiliations = {
+	"groups": [
+	{
+		"title": "JavaScriptMN Meetup",
+		"dates": "Winter 2015 - Present",
+		"description": "Meets once per month to discuss current topics in web development.",
+		"url": "http://www.meetup.com/JavaScriptMN/"
+	},
+	{
+		"title": "Educelerate Meetup",
+		"dates": "Spring 2014 - Present",
+		"description": "Meets periodically to discuss the use of technology to enhance education.",
+		"url": "http://www.meetup.com/EducelerateNorth/"
+	},
+	{
+		"title": "StartupEDU",
+		"dates": "Spring 2014",
+		"description": "I worked on a team led by Julia Winter to develop an idea for a chemistry video game. The concept behind Cyclo6 is to teach chemical reaction mechanisms by allowing students to manipulate molecular interactions using a touchscreen. Our team took second place after judging! I provided feedback to the programmer on our team on how the interface should look as well as assisted in producing a presentation that outlined the rationale behind the game.  Julia Winter has gone on to found the educational technology company OChemPrep.",
+		"url": "http://startupweekend.org/about/"
+	}
+	]
+
 };
 
 
 projects.display = function() {
 	for (project in projects.programming){
 		var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.programming[project].title);
+		formattedProjectTitle = formattedProjectTitle.replace("%url%", projects.programming[project].url);
+		var formattedProjectGitHub = HTMLprojectGitHub.replace("%data%", projects.programming[project].github);
 		var formattedProjectDate = HTMLprojectDates.replace("%data%", projects.programming[project].dates);
 		var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.programming[project].description);
 		var formattedProjectImage = HTMLprojectImage.replace("%data%", projects.programming[project].image);
@@ -145,11 +167,26 @@ projects.display = function() {
 		$(".project-entry:last").append(formattedProjectTitle);
 		$(".project-entry:last").append(formattedProjectDate);
 		$(".project-entry:last").append(formattedProjectDescription);
+		$(".project-entry:last").append(formattedProjectGitHub);
 		$(".project-entry:last").append(formattedProjectImage);
 		
 	}
 }
 
+affiliations.display = function() {
+	for (affiliation in affiliations.groups){
+		var formattedAffiliationTitle = HTMLaffiliationTitle.replace("%data%", affiliations.groups[affiliation].title);
+		formattedAffiliationTitle = formattedAffiliationTitle.replace("%url%", affiliations.groups[affiliation].url);
+		var formattedAffiliationDate = HTMLaffiliationDates.replace("%data%", affiliations.groups[affiliation].dates);
+		var formattedAffiliationDescription = HTMLaffiliationDescription.replace("%data%", affiliations.groups[affiliation].description);
+		$("#affiliations").append(HTMLaffiliationStart);
+		$(".affiliation-entry:last").append(formattedAffiliationTitle);
+		$(".affiliation-entry:last").append(formattedAffiliationDate);
+		$(".affiliation-entry:last").append(formattedAffiliationDescription);
+		
+		
+	}
+}
 
 //Function to Display schools from education object
 function displayEducation(){
@@ -178,7 +215,6 @@ function displayOnlineCourses(){
 		var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", titleAndSchool);
 		var formattedOnlineDates = HTMLonlineDates.replace("%data%", onlineCourses.courses[course].dates);
 		var formattedOnlineURL = HTMLonlineURL.replace("%data%", onlineCourses.courses[course].url);
-
 		$(".online-entry:last").append(formattedOnlineTitle);
 		$(".online-entry:last").append(formattedOnlineDates);
 		$(".online-entry:last").append(formattedOnlineURL);
@@ -251,6 +287,9 @@ displayNameAndContacts();
 //call display projects function
 projects.display();
 
+//call to display affiliations function
+affiliations.display();
+
 //Call function to display education
 displayEducation();
 
@@ -258,92 +297,8 @@ displayEducation();
 displaySkills();
 
 //Call function to display online courses
-displayOnlineCourses();
+//displayOnlineCourses();
 
 //Call function displayWork()
 displayWork();
 
-//Internationalize Button
-$("#main").prepend(internationalizeButton);
-
-//Function for Internationalize Button
-function inName(){
-	 
-	 var fullName = bio.name;
-	 console.log(fullName);
-	 var splitName = fullName.split(" ");
-	 console.log(splitName[0]);
-	 splitName[1] =  splitName[1].toUpperCase();
-	 console.log(splitName[1]);
-	 fullName = splitName[0] + " " + splitName[1];
-	 return fullName;
-};
-
-//display map
-$("#mapDiv").append(googleMap);
-
-
-
-//Test code for logging button clicks (not used for anything)
-$(document).click(function(loc){
-	var x = loc.pageX;
-	var y = loc.pageY;
-	logClicks(x,y);
-});
-
-
-//*****************************************************************************
-//alert("All done!");
-
-//var formattedWorkEmployer = HTMLworkEmployer.replace("%data%", work.employer);
-//var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.title);
-//var formattedWorkDates = HTMLworkDates.replace("%data%", work.dates);
-//var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.location);
-//var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.description);
-
-//var work = {};
-//work.employer = "Saint Paul Public Schools";
-//work.title = "High School Science Teacher";
-//work.dates = "September 2003 - Present";
-//work.location = "Saint Paul, MN";
-//work.description = "9-12 Chemistry and Physics Teacher, FIRST Robotics Coach";
-
-//var education = {};
-//education["schoolName"] = "Oregon State University - School of Electrical Engineering and Computer Science";
-//education["schoolDegree"] = "Bachelor of Science";
-//education["schoolDates"] = "June 2014 - August 2016";
-//education["schoolLocation"] = "Corvallis, Oregon";
-//education["schoolMajor"] = "Computer Science";
-
-//$("#main").append(bio.name);
-//$("#main").append(bio.role);
-//$("#main").append(bio.contact);
-//$("#main").append(bio.picture);
-//$("#main").append(bio.welcome);
-//$("#main").append(bio.skills);
-
-
-//$("#workExperience").append(HTMLworkStart);
-//$("#workExperience").append(formattedWorkTitle);
-//$("#workExperience").append(formattedWorkEmployer);
-//$("#workExperience").append(formattedWorkDescription);
-//$("#workExperience").append(formattedWorkLocation);
-//$("#workExperience").append(formattedWorkDates);
-
-
-
-//This is stuff from early in the lessons:
-
-//$("#main").append("Patrick Levy");
-
-//var name = "Patrick Levy";
-//var role = "Web Developer";
-
-//var skills = ["awesomeness", "programming", "teaching", "js"];
-
-
-//var awesomeThoughts = "I am Patrick and I am AWESOME!";
-//console.log(awesomeThoughts);
-
-//var funThoughts = awesomeThoughts.replace("AWESOME", "FUN");
-//console.log(funThoughts);

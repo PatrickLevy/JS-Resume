@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry, .online-entry {
+.education-entry, .work-entry, .project-entry, .online-entry, .affiliation-entry {
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -109,7 +109,7 @@ a {
 }
 
 .gray {
-  background-color: #DDDDDD;
+  background-color: white;
   padding-bottom: 10px;
   clear:both;
 }
