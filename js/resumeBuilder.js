@@ -1,7 +1,7 @@
 //Bio Contacts Object
 var bio = {
 	"name" : "Patrick Levy",
-	"role" : "Science Educator and Student - Computer Science",
+	"role" : "Software Developer and Former High School Science Educator",
 	"contacts" : {
 		"mobile": "612-501-7491",
 		"email" : "mrpatricklevy@gmail.com",
@@ -9,8 +9,8 @@ var bio = {
 		"twitter" : "N/A",
 		"location" : "Minneapolis"
 	},
-	"welcomeMsg" : "Welcome!  I have been teaching chemistry and physics in Saint Paul for several years.  I am currently working on a computer science degree through Oregon State University.  Upon graduation I plan to work as a software developer and am especially interested in writing web applications.",
-	"skills" : ["Science Education", "Programming", "JavaScript", "Meteor", "PHP", "MySQL", "HTML", "CSS", "C/C++", "Java"],
+	"welcomeMsg" : "I am excited to be embarking on a new career journey in software development!  I especially enjoy developing high performance web applications using cutting edge frameworks and stacks such as Node, MEAN, and Meteor.  In addition to software development I am passionate about education.  I taught high school chemistry and was the head coach of a varsity FIRST Robotics team for many years prior to my move into software.",
+	"skills" : ["Programming", "JavaScript", "Meteor", "MongoDB", "PHP", "MySQL", "HTML", "CSS", "C/C++", "Science Education", "Chemistry", "Physics"],
 	"bioPic" : "images/me.jpg"
 };
 
@@ -19,9 +19,16 @@ var bio = {
 var work = {
 	"jobs": [
 	{
+		"employer": "TIES",
+		"title": "JavaScript Developer Intern",
+		"dates": "September 2015 - Present",
+		"location": "Falcon Heights, MN",
+		"description": "Write JavaScript code to perform bug fixes and software updates to edSpring, a web application designed to support response to intervention strategies in K-12 schools.  Run queries, updates, and scripts on the NoSQL (MongoDB) database used to support the edSpring application."
+	},
+	{
 		"employer": "Saint Paul Public Schools",
 		"title": "High School Science Teacher",
-		"dates": "September 2003 - Present",
+		"dates": "September 2003 - June 2015",
 		"location": "Saint Paul, MN",
 		"description": "9-12 Chemistry and Physics Teacher, FIRST Robotics Coach"
 	},
@@ -38,7 +45,7 @@ var work = {
 		"title": "Laboratory Teaching Assistant and Undergraduate Researcher.",
 		"dates": "1997 - 1998",
 		"location": "Minneapolis, MN",
-		"description": "Teach and supervise the laboratory component of a General Chemistry course.  Perform research on the synthesis of novel organic molecules."	
+		"description": "Teach and supervise the laboratory component of a general chemistry course.  Perform research on the synthesis of novel organic molecules."	
 	}
 	
 	
@@ -102,8 +109,8 @@ var projects = {
 	"programming": [
 	{
 		"title": "School Announcements App",
-		"dates": "Spring 2015",
-		"description": "I am developing a web app to assist with communcation between students, staff, and parents involved in extracurricular school activities.  Students can log in, subscribe to groups to view public announcements, and request membership to groups to view and write private announcements.  This was my first time writing an application using the Meteor.JS framework and I am very excited to continue working with Meteor! Log in with username: student, password: student to try it out!",
+		"dates": "Spring - Summer 2015",
+		"description": "I am developing a web app to assist with communication between students, staff, and parents involved in extracurricular school activities.  Students can log in, subscribe to groups to view public announcements, and request membership to groups to view and write private announcements.  This was my first time writing an application using the Meteor.JS framework and I am very excited to continue working with Meteor! Log in with username: student, password: student to try it out!",
 		"image": "images/announcementsCap.png",
 		"url": "http://announcements.meteor.com",
 		"github": "https://github.com/PatrickLevy/announcements"
@@ -111,10 +118,18 @@ var projects = {
 	{
 		"title": "Multiple Choice Test Center",
 		"dates": "Spring 2015",
-		"description": "I have been working on a site for teachers to administor tests and quizzes.  The application allows a teacher to log in to generate assessements or view student results.  Students can log in to take assessments.  The tests are immediately graded and the student can see immediate feedback on their performance.  I would like to add the ability to incorporate numerical answers that are graded using a % based tolerance to allow for rounding differences.  The front end uses HTML, JavaScript, and CSS.  The backend was written in PHP with a MySQLi database.  Try logging in with username: student, password: student to try out a student account.  Try logging in with username: teacher, password: teacher to try out a teacher account.",
+		"description": "I have been working on a site for teachers to administer tests and quizzes.  The application allows a teacher to log in to generate assessments or view student results.  Students can log in to take assessments.  The tests are immediately graded and the student can see immediate feedback on their performance.  I would like to add the ability to incorporate numerical answers that are graded using a % based tolerance to allow for rounding differences.  The front end uses HTML, JavaScript, and CSS.  The back end was written in PHP with a MySQLi database.  Try logging in with username: student, password: student to try out a student account.  Try logging in with username: teacher, password: teacher to try out a teacher account.",
 		"image": "images/testCenterCap.png",
 		"url": "http://web.engr.oregonstate.edu/~levyp/cs290WebDev/finalProject/login.php",
 		"github":  "https://github.com/PatrickLevy/finalProject"
+	},
+	{
+		"title": "How to Guide for Getting Started with Meteor.JS",
+		"dates": "May 2015",
+		"description": "This is a simple site for helping developers who are new to Meteor.JS get started.  This guide demonstrates some of the basic principals of Meteor such as Templates, Spacebars, Routing, and the MongoDb database.",
+		"image": "images/howToMeteor.png",
+		"url": "http://levyhowto.meteor.com",
+		"github": "https://github.com/PatrickLevy/howToMeteor"
 	},
 	{
 		"title": "Ionic Bonding Practice App",
